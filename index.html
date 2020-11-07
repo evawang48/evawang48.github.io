@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightseagreen;
+      }
+     #card {
+       width: 744px;
+       height: 528px;
+       background-color:  white;
+       position: relative;
+     }
+     #intro {
+       width: 238px;
+       height: 284px;
+       background-color: darkslategray;
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       color: white;
+       padding-left: 24px;
+     } 
+
+     #center {
+       width: 320px;
+       height: 528px;
+       background-color: white;
+       position: absolute;
+       left: 238px;
+       color: gray;
+       padding-left: 24px;
+       padding-top:  20px;
+     }
+
+     h2 {
+       color: lightseagreen
+
+     }
+      #right {
+        width: 186px;
+        height: 528px;
+        position: absolute;
+        right: 0;
+      }
+
+    .skill{
+      width: 138px;
+      height:  32px;
+      background: white;
+      position: relative;
+      color: gray;
+      border-radius: 6px;
+      margin: 12px;
+     }
+
+    .gray-bar{
+      width:138px;
+      height: 12px;
+      background-color: lightgray;
+      position: absolute;
+      bottom: 0;
+      border-radius: 6px;
+    }
+
+    .green-bar {
+      width:69px;
+      height: 12px;
+      background-color: lightseagreen;
+      position: absolute;
+      bottom: 0;
+      border-radius: 6px;
+    }
+
+    .green-bar-2 {
+      width:24px;
+      height: 12px;
+      background-color: lightseagreen;
+      position: absolute;
+      bottom: 0;
+      border-radius: 6px;
+      width: 24px;
+      left: 24px;
+    } 
+    .right-text {
+      position: absolute;
+      right: 0;
+      top: 0;  
+    }
+    
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+     $(function() {
+       $("#img-2").hide();
+       $("#img-1").click(function () {
+        $("#img-1").fadeOut(5000);
+        $("#img-2").fadeIn(5000);
+       });
+       $("#img-2").click(function () {
+        $("#img-2").fadeOut();
+        $("#img-1").fadeIn();
+      });
+     });  
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <img src="tab.png" id="img-1" width="238" height="244" />
+      <img src="06.png" id="img-2" width="238" height="244" />
+      <div id="intro">
+      <h1>王惠琪Eva</h1>
+      <p class="white">永遠25歲</p>
+      <p class="white">宅女</p>
+      <p class="white">現在嘗試在做貼圖和部落客的斜槓人生</p>
+    </div>
+      <div id="center">
+      <h2>自我介紹</h2>
+      <p>希望大家多多來看看我</p>
+      <h2>工作經驗</h2>
+      <u1>
+          <li>金融業
+      </<u1>
+      <h2>教育程度</h2>
+      <u1>
+        <li>大學
+        </li>    
+      </<u1>
+
+      </div>
+      <div id="right">
+        <h2>個性</h2>
+        <div class="skill">
+          內向
+          <div class="right-text">外向</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar-2"></div>
+        </div>
+        <h2>技能</h2>
+        <div class="skill">
+          HTML
+          <div class="gray-bar"></div>
+          <div class="green-bar" style="width: 60%"></div>
+        </div>
+        <div class="skill">
+          HTML
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        
+
+      </div>
+    />
+  </body>
+</html>
